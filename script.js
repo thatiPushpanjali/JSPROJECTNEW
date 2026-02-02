@@ -42,7 +42,7 @@ function login() {
   if (email === savedEmail && password === savedPassword) {
     localStorage.setItem("isLoggedIn", "true"); // login flag
     alert("Login Successful!");
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   } else {
     alert("Invalid Email or Password");
   }
@@ -50,7 +50,7 @@ function login() {
 function continueAsGuest() {
   localStorage.setItem("isLoggedIn", "true");
   localStorage.setItem("userName", "Guest");
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
 
 
@@ -59,7 +59,7 @@ function continueAsGuest() {
 // =======================
 function goBooking(place) {
   localStorage.setItem("place", place);
-  window.location.href = "booking.html";
+  window.location.href = "Booking.html";
 }
 
 // =======================
