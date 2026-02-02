@@ -120,7 +120,7 @@ function goBack() {
 }
 
 function goHome() {
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
 // =======================
 // SLIDER IMAGES
@@ -159,7 +159,7 @@ if (gallery) {
 
     img.onclick = () => {
       localStorage.setItem("place", place);
-      window.location.href = "booking.html";
+      window.location.href = "Booking.html";
     };
 
     gallery.appendChild(img);
