@@ -1,0 +1,385 @@
+/* ======================
+   RESET & SMOOTH SCROLL
+====================== */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+/* ======================
+   FORM (LOGIN / REGISTER)
+====================== */
+.form-container {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  margin: 120px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* small colorful button */
+.form-container button {
+  padding: 8px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #2980b9;
+}
+
+.form-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ======================
+   HERO SECTION
+====================== */
+.hero {
+  margin-top: 70px;
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* small colorful hero button */
+.hero-btn {
+  padding: 8px 22px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #d35400;
+}
+
+/* ======================
+   IMAGE GALLERY
+====================== */
+.gallery {
+  padding: 50px 30px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* small colorful book now */
+.gallery-card button {
+  margin: 10px 0 15px;
+  padding: 7px 18px;
+  background:rgb(106, 76, 76);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.gallery-card button:hover {
+  background: #16a085;
+}
+
+/* ======================
+   SERVICES BOXES
+====================== */
+.services-box {
+  padding: 60px 30px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.services-box h2 {
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.services-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-box img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+
+.service-box h3 {
+  margin-bottom: 8px;
+  color: #3498db;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #555;
+}
+/* NORMAL STATE */
+.service-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.service-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* CLICK EFFECT */
+.service-box:active {
+  transform: translateY(-2px) scale(0.97);
+}
+
+
+/* ======================
+   BIG IMAGE SECTION
+====================== */
+.big-image {
+  height: 70vh;
+  margin-top: 50px;
+  background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.big-image h2 {
+  position: relative;
+  color: white;
+  font-size: 40px;
+}
+
+/* ======================
+   BOOKING & CONFIRMATION
+====================== */
+.booking-container,
+.confirm-container {
+  width: 400px;
+  /* background:rgb(94, 206, 251); */
+  padding: 25px;
+  margin: 120px auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.booking-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  
+}
+
+/* small submit */
+.booking-container button {
+  padding: 8px 22px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.booking-container button:hover {
+  background: #2980b9;
+}
+
+.booking-container .back {
+  background: #3498db;
+}
+
+/* ======================
+   FOOTER
+====================== */
+.footer {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 50px 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-box p,
+.footer-box a {
+  font-size: 14px;
+  color: #dcdcdc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 13px;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services-box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid,
+  .services-box-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking | Travel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================
+       NAVBAR
+  ====================== -->
+  <nav class="navbar">
+    <h1>🌍 TravelWorld</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#explore">Explore</a></li>
+      <li><a href="index.html#bookings">Services</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======================
+       BOOKING FORM
+  ====================== -->
+  <div class="booking-container">
+    <h2>Travel Booking Form</h2>
+
+    <!-- Selected place -->
+    <p id="placeName" style="margin-bottom:15px; font-weight:bold;"></p>
+
+    <input type="text" id="custName" placeholder="Your Name">
+    <input type="email" id="custEmail" placeholder="Your Email">
+    <input type="date" id="travelDate">
+    <input type="number" id="persons" placeholder="Number of Persons">
+
+    <button onclick="confirmBooking()">Submit Booking</button>
+    <button class="back" onclick="goBack()">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

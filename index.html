@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Travel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================
+       NAVBAR (TOP)
+  ====================== -->
+  <nav class="navbar">
+    <h1>🌍 TravelWorld</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#bookings">Services</a></li>
+      <!-- <li><a href="login.html">Logout</a></li> -->
+       <li><a href="#" onclick="confirmLogout()">Logout</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- ======================
+       HERO SECTION
+  ====================== -->
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <h1>Explore the World 🌍</h1>
+      <!-- <p>Discover amazing places at exclusive deals</p> -->
+      <!-- Explore Now scrolls to gallery -->
+      <a href="#explore">
+        <button class="hero-btn">Explore Now</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================
+       IMAGE GALLERY (EXPLORE)
+  ====================== -->
+  <section class="gallery" id="explore">
+    <h2>Popular Destinations</h2>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card">
+        <h4>Goa</h4>
+        <img src="https://www.cleartrip.com/collections/wp-content/uploads/2018/04/goa.jpg">
+        <button onclick="goBooking('Goa')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Manali</h4>
+        <img src="https://e3ub2smz53d.exactdn.com/wp-content/uploads/2019/11/India_Manali_Himachal_Pradesh.jpg?strip=all&quality=92&webp=92&avif=92&sharp=1">
+        <button onclick="goBooking('Manali')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Kerala</h4>
+        <img src="https://b3681537.smushcdn.com/3681537/wp-content/uploads/2023/07/what-is-kerala-famous-for.jpg?lossy=2&strip=1&webp=1">
+        <button onclick="goBooking('Kerala')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Delhi</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXtB2-MLZaRUlv0QSt8SzbTs49VUqdXW2GA&s">
+        <button onclick="goBooking('Delhi')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Kashmir</h4>
+        <img src="https://cdn.abhibus.com/2024/05/Best-Time-to-visit-Kashmir.jpg">
+        <button onclick="goBooking('Kashmir')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Arunachalam</h4>
+        <img src="https://holaciti.com/assets/Articles/1750757213_qcDqTnW2fL.webp">
+        <button onclick="goBooking('Arunachalam')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Kashi</h4>
+        <img src="https://www.indiantempletour.com/wp-content/uploads/2022/08/Kashi-Pilgrim-Tour-Package.jpg">
+        <button onclick="goBooking('Kashi')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Ooty</h4>
+        <img src="https://s3.india.com/wp-content/uploads/2024/07/Historical-Places-To-Visit-In-Ooty.jpg##image/jpg">
+        <button onclick="goBooking('Ooty')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Udaipur</h4>
+        <img src="https://previews.123rf.com/images/byheaven/byheaven1507/byheaven150700044/43259195-lake-pichola-with-city-palace-view-at-pink-sunset-sky-in-udaipur-rajasthan-india.jpg">
+        <button onclick="goBooking('Udaipur')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Ladakh</h4>
+        <img src="https://arunsaha.com/wp-content/uploads/sites/53/2023/02/60691W-1024x684.jpg">
+        <button onclick="goBooking('Ladakh')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Mumbai</h4>
+        <img src="https://assets.cntraveller.in/photos/67060b030871a221e9f6bd88/1:1/w_3337,h_3337,c_limit/GettyImages-520120864.jpg">
+        <button onclick="goBooking('Mumbai')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Bangalore</h4>
+        <img src="https://karnatakatourism.org/_next/image/?url=https%3A%2F%2Fweb-cms.karnatakatourism.org%2Fwp-content%2Fuploads%2F2025%2F06%2FUB_City_at_night_.jpg&w=3840&q=75">
+        <button onclick="goBooking('Bangalore')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Hyderabad</h4>
+        <img src="https://t3.ftcdn.net/jpg/12/78/75/42/360_F_1278754237_rMGKqTmKIPIUYZh04kmIIM3P1OCKqOXi.jpg">
+        <button onclick="goBooking('Hyderabad')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Chennai</h4>
+        <img src="https://t4.ftcdn.net/jpg/04/84/47/27/360_F_484472702_acpl3SZTBwb2Al4ZiW8VusICp7Utl8ed.jpg">
+        <button onclick="goBooking('Chennai')">Book Now</button>
+      </div>
+
+      <div class="gallery-card">
+        <h4>Pondicherry</h4>
+        <img src="https://assets.cntraveller.in/photos/60ba05b280dafa02f9b8b879/16:9/w_1280,c_limit/Beachhunambar.jpg">
+        <button onclick="goBooking('Pondicherry')">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================
+       BOOKINGS SECTION
+  ====================== -->
+  <section class="banner" id="bookings">
+    <h2>Easy & Fast Bookings ✈️</h2>
+    <p>Select a destination and book your trip in minutes</p>
+  </section>
+
+  <!-- ======================
+       BIG IMAGE AFTER
+  ====================== -->
+  <section class="big-image">
+    <h2>Your Journey Starts Here ✈️</h2>
+  </section>
+<!-- ======================
+     SERVICES BOXES
+====================== -->
+<section class="services-box">
+  <h2>Our Services</h2>
+
+  <div class="services-box-container">
+
+    <div class="service-box">
+      <img src="https://picsum.photos/80/80?1" alt="Destination">
+      <h3>Destinations</h3>
+      <p>Explore top travel destinations with beautiful views.</p>
+    </div>
+
+    <div class="service-box">
+      <img src="https://picsum.photos/80/80?2" alt="Booking">
+      <h3>Easy Booking</h3>
+      <p>Book your trip quickly with a simple booking process.</p>
+    </div>
+
+    <div class="service-box">
+      <img src="https://picsum.photos/80/80?3" alt="Payment">
+      <h3>Secure Payment</h3>
+      <p>Your payments are safe and fully secured.</p>
+    </div>
+
+    <div class="service-box">
+      <img src="https://picsum.photos/80/80?4" alt="Support">
+      <h3>24/7 Support</h3>
+      <p>We are always available to help you anytime.</p>
+    </div>
+
+
+  </div>
+
+</section>
+<!-- ======================
+     FOOTER
+====================== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-box">
+      <h3>🌍 TravelWorld</h3>
+      <p>
+        Discover beautiful destinations, plan your trips easily,
+        and enjoy unforgettable journeys with us.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#bookings">Process</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h4>Contact</h4>
+      <p>Email: support@travelworld.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2026 TravelWorld. All rights reserved.</p>
+  </div>
+</footer>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
